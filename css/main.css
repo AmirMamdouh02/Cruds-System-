@@ -1,0 +1,15 @@
+body{
+    font-family:cursive ;
+    background-color: rgb(201, 201, 201);
+    font-size: 18px;
+}
+table{
+    margin-top: 15px;
+}
+.btn{
+    margin-top: 10px;
+}
+.bridge {
+    width: 90%;
+    margin: auto;
+}
