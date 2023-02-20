@@ -103,6 +103,26 @@ function clearvalue(){
     productDescription.value=""
     productCount.value=""
 }
+function search (term){
+    var productdata2=""
+    for (let i = 0; i < productContainer.length; i++) {
+        if(productContainer[i].name.toLowerCase().includes(term.toLowerCase().trim())){
+            productdata2+=`
+            <tr>
+                <td>${i+1}</td>
+                <td>${productContainer[i].name}</td>
+                <td>${productContainer[i].price}</td>
+                <td>${productContainer[i].categ}</td>
+                <td>${productContainer[i].desc}</td>
+                <td><button onclick="edit_btn(${i})" class="btn btn-warning">Edit</button></td>
+                <td><button onclick="clear_btn(${i})" class="btn btn-danger">Delete</button></td>
+            </tr>`
+        }
+       
+       
+    }
+    document.getElementById("t_body").innerHTML=productdata2
+}
 
 
 
