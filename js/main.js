@@ -92,6 +92,7 @@ function edit_btn(i){
 
 function deleteall(){
     productContainer.splice(0)
+    document.getElementById("t_foot").style.display = "none"
     displayproduct()
 }
 
